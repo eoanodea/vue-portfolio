@@ -22,7 +22,9 @@
                     <span class="md-title">My Title</span>
                 </div>
                 <div class="md-toolbar-section-end">
-                    <span class="md-title">End</span>
+                    <md-button class="md-icon-button md-primary">
+                        <md-icon>menu</md-icon>
+                    </md-button>
                 </div>
             </div>
             <div class="md-toolbar-row">
@@ -38,12 +40,13 @@
 </template>
 <script>
     import Vue from 'vue'
-    import { MdApp, MdToolbar, MdTabs, MdButton } from 'vue-material/dist/components'
+    import { MdApp, MdToolbar, MdTabs, MdButton, MdIcon } from 'vue-material/dist/components'
 
     Vue.use(MdApp)
     Vue.use(MdTabs)
     Vue.use(MdToolbar)
     Vue.use(MdButton)
+    Vue.use(MdIcon)
 
     export default {
         name: 'Header',   
